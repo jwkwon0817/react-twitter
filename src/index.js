@@ -1,15 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import firebase from './firebase';
+import { authService } from 'fbase';
 import reportWebVitals from './reportWebVitals';
-
-console.log(firebase);
+import AppComponent from "./components/App";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <AppComponent />
   </React.StrictMode>
 );
 
